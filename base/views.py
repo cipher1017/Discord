@@ -120,7 +120,7 @@ def UpdateRoom(request, pk):
     form= RoomForm(instance=room)
 
     if request.user != room.host:
-        return HttpResponse("you are not allowed to make changes here")
+        return HttpResponse("you are hh git not allowed to make changes here")
 
     if request.method=='POST' :
         form= RoomForm(request.POST, instance=room)
